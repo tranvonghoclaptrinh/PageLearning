@@ -1,0 +1,41 @@
+        /* Hiệu ứng chuyển cảnh mượt mà toàn trang */
+        body {
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        /* Hiệu ứng Hover cho Card */
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .dark .card-hover:hover {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        /* Hiệu ứng Hover cho Icon tròn trong Card */
+        .card-hover:hover .icon-box {
+            transform: scale(1.1) rotate(5deg);
+            transition: transform 0.3s ease;
+        }
+
+        /* Hiệu ứng nút bấm */
+        .btn-hover {
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-hover:active {
+            transform: scale(0.95);
+        }
+
+        /* Hiệu ứng icon mạng xã hội */
+        .social-icon {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .social-icon:hover {
+            transform: scale(1.2) translateY(-3px);
+        }
